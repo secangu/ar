@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class audiocontroller : MonoBehaviour
 {
+
     [SerializeField] List<GameObject> gameObjects;
-    [SerializeField] List<AudioClip> audioClips;
     [SerializeField] int activeObjectIndex;
-    AudioSource audioSource;
+    [SerializeField] bool estadoAudio;
+    [SerializeField] AudioSource audioSource;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -17,11 +18,12 @@ public class audiocontroller : MonoBehaviour
             gameObjects[i].SetActive(false);
         }
 
-        if (gameObjects.Count > 0 && audioClips.Count == gameObjects.Count)
+        if (gameObjects.Count > 0)
         {
             gameObjects[activeObjectIndex].SetActive(true);
-            audioSource.clip = audioClips[activeObjectIndex];
+
         }
+
     }
 
     void Update()
@@ -30,12 +32,12 @@ public class audiocontroller : MonoBehaviour
     }
     public void Increment()
     {
-        audioSource.Stop();
+
         gameObjects[activeObjectIndex].SetActive(false);
         activeObjectIndex = (activeObjectIndex + 1) % gameObjects.Count;
 
         gameObjects[activeObjectIndex].SetActive(true);
-        audioSource.clip = audioClips[activeObjectIndex];
+
 
     }
 
@@ -43,22 +45,33 @@ public class audiocontroller : MonoBehaviour
     {
 
 
-        audioSource.Stop();
+
         gameObjects[activeObjectIndex].SetActive(false);
         activeObjectIndex = (activeObjectIndex - 1) % gameObjects.Count;
 
         if (activeObjectIndex < 0)
         {
-            activeObjectIndex = gameObjects.Count-1;
+            activeObjectIndex = gameObjects.Count - 1;
         }
 
         gameObjects[activeObjectIndex].SetActive(true);
-        audioSource.clip = audioClips[activeObjectIndex];
+
 
 
     }
-    public void PlaySound()
+
+
+    public void StopSound()
     {
-        audioSource.Play();
+        estadoAudio = !estadoAudio;
+
+        if (estadoAudio)
+        {
+            audioSource.Pause();
+        }
+        else
+        {
+            audioSource.UnPause();
+        }
     }
 }

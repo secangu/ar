@@ -6,14 +6,21 @@ public class TouchController : MonoBehaviour
     [SerializeField] float _rotationSpeed = 100;
     [SerializeField] bool _isRotating;
     [SerializeField] bool mouse;
+
+    Vector3 position;
     void Start()
     {
         transform.rotation = Quaternion.Euler(0, 0, 0);
+
+        position = transform.position;
+
     }
     private void Update()
     {
         Touch();
         if(mouse) Mouse();
+
+        transform.position = position;
     }
 
     private void Touch()
