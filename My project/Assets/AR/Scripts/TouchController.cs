@@ -20,7 +20,7 @@ public class TouchController : MonoBehaviour
         Touch();
         if(mouse) Mouse();
 
-        transform.position = position;
+     //   transform.position = position;
     }
 
     private void Touch()
