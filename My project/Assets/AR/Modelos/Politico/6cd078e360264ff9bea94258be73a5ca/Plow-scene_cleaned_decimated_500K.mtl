@@ -1,0 +1,80 @@
+newmtl Solid
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.0
+illum 0
+
+newmtl Plow-scene_cleaned_decimated_500K
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.0
+illum 0
+map_Kd Plow-scene_cleaned_decimated_500K.jpg
+
+newmtl Plow-scene_cleaned_decimated_500K1
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.0
+illum 0
+map_Kd Plow-scene_cleaned_decimated_500K1.jpg
+
+newmtl Plow-scene_cleaned_decimated_500K2
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.0
+illum 0
+map_Kd Plow-scene_cleaned_decimated_500K2.jpg
+
+newmtl Plow-scene_cleaned_decimated_500K3
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.0
+illum 0
+map_Kd Plow-scene_cleaned_decimated_500K3.jpg
+
+newmtl Plow-scene_cleaned_decimated_500K4
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.0
+illum 0
+map_Kd Plow-scene_cleaned_decimated_500K4.jpg
+
+newmtl Plow-scene_cleaned_decimated_500K5
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.0
+illum 0
+map_Kd Plow-scene_cleaned_decimated_500K5.jpg
+
+newmtl Plow-scene_cleaned_decimated_500K6
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.0
+illum 0
+map_Kd Plow-scene_cleaned_decimated_500K6.jpg
+
+newmtl Plow-scene_cleaned_decimated_500K7
+Ka  1.0 1.0 1.0
+Kd  1.0 1.0 1.0
+Ks  0.0 0.0 0.0
+d  1.0
+Ns  0.0
+illum 0
+map_Kd Plow-scene_cleaned_decimated_500K7.jpg
+
